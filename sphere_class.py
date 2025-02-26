@@ -6,6 +6,8 @@ class Sphere:
    radius: ti.f32
    centre: ti.math.vec3
    colour: ti.math.vec3
+   specular: ti.f32
+   reflectivity: ti.f32
 
    @ti.func
    def area(self):
