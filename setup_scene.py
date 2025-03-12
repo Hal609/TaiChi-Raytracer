@@ -1,9 +1,9 @@
-import taichi as ti
 from taichi.math import vec3
 
 from sphere_class import Sphere
 from lighting import PointLight
 from helpers import *
+
 
 def get_spheres():
    spheres = Sphere.field(shape=3)
@@ -37,8 +37,8 @@ def get_lights():
 
    lights[0] = PointLight(
       position = vec3((6.0, 13.5, 8.0)),
-      colour = vec3((1.0, 1.0, 1.0)), 
-      intensity = 1.0
+      colour = vec3((1.0, 1.0, 1.0)),
+      intensity = 0.8
    )
 
    lights[1] = PointLight(
